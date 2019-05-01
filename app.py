@@ -8,19 +8,19 @@ app = Flask(__name__)
 @app.route('/', methods=['GET'])
 def index():
     # Define key points
-    session['name'] = 'Corin Faife'
+    session['name'] = ''
 
-    session['challenge_you_felt'] = 'debugging Flask for the first time'
-    session['social_interaction'] = 'game nights with new friends'
-    session['technical_achievement'] = 'deploying my first web app'
-    session['personal_achievement'] = 'learning how to ask for help'
-    session['unexpected_benefit'] = 'a short commute in the morning'
-    session['minor_flaw'] = 'getting overtired'
-    session['inspiring_thing'] = 'talking politics with people who care'
-    session['metaphor'] = 'people with Linux kernels where their brains should be'
+    session['challenge_you_felt'] = ''
+    session['social_interaction'] = ''
+    session['technical_achievement'] = ''
+    session['personal_achievement'] = ''
+    session['unexpected_benefit'] = ''
+    session['minor_flaw'] = ''
+    session['inspiring_thing'] = ''
+    session['metaphor'] = ''
 
     body_text = '''
-    Before I came to R.C., I was ___
+    Before I came to R.C., I was .
                 '''
 
     return render_template('layout.html', text=body_text)
