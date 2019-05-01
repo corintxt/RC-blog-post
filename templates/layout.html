@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RC Blog Post</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  </head>
+<body>
+<div class="container">
+
+<h1>What is R.C.?</h1>  
+
+<p>{{ session.get('name') }} </p>
+
+<h4>Recurse Center is {{ session.get('challenge_you_felt') }}, and {{ session.get('social_interaction') }}.</h4>
+
+<h4>Recurse Center is {{ session.get('technical_achievement') }}. It's {{ session.get('personal_achievement') }}, and {{ session.get('unexpected_benefit') }}.</h4>
+
+<h4>Recurse Center is {{ session.get('minor_flaw') }}, but then {{ session.get('inspiring_thing') }}.</h4>
+
+<hr>
+
+<p>
+  {{ text }}
+</p>
+
+</div>
+</body>
+</html>

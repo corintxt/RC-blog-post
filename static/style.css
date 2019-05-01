@@ -1,0 +1,13 @@
+/*** Body ****/
+body {
+    background-color: #e4e4e4;
+    background-image: url("/static/page.jpeg");
+    background-attachment: fixed;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.row {
+    display: inline;
+}
+
