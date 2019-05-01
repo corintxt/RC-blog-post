@@ -11,7 +11,7 @@ def index():
     session['name'] = ''
 
     session['challenge_you_felt'] = ''
-    session['social_interaction'] = ''
+    session['positive_social_interaction'] = ''
     session['technical_achievement'] = ''
     session['personal_achievement'] = ''
     session['unexpected_benefit'] = ''
@@ -20,7 +20,7 @@ def index():
     session['metaphor'] = ''
 
     body_text = '''
-    Before I came to R.C., I was .
+    Before I came to R.C., I was...
                 '''
 
     return render_template('layout.html', text=body_text)
