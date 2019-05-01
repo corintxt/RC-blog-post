@@ -17,6 +17,7 @@ def index():
     session['unexpected_benefit'] = 'a short commute in the morning'
     session['minor_flaw'] = 'getting overtired'
     session['inspiring_thing'] = 'talking politics with people who care'
+    session['metaphor'] = 'people with Linux kernels where their brains should be'
 
     body_text = '''
     Before I came to R.C., I was ___
